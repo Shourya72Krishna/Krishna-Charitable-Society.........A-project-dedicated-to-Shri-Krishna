@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>साइन इन - कृष्णा चैरिटेबल सोसाइटी</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- टॉप हैडर (ब्लैक बैकग्राउंड) -->
+    <div id="top-header6">
+        <!-- Placeholder for Logo -->
+        <div id="logo6">
+            <img src="logo.jpg" alt="Krishna Charitable Society Logo" height="170" width="170">
+        </div>
+        कृष्णा चैरिटेबल सोसाइटी 
+        <p style="color: black;">. <br> .</p>
+        <div id="auth-buttons2">
+            <a href="signinh.html">साइन इन</a>
+        <a href="signuph.html">साइन अप</a>
+            <a href="signin.html">English</a>
+        </div>
+    </div>
+
+    <!-- नेविगेशन बार (पिंक बैकग्राउंड) -->
+    <div id="nav2">
+        <ul>
+            <li><a href="indexh.html">मुख्य पृष्ठ</a></li>
+            <li><a href="abouth.html">हमारे बारे में</a></li>
+            <li><a href="donateh.html">दान करें</a></li>
+            <li><a href="projectsh.html">परियोजनाएँ</a></li>
+            <li><a href="get-involvedh.html">जोड़ें</a></li>
+            <li><a href="contacth.html">संपर्क करें</a></li>
+    </div>
+
+    <!-- साइन इन फॉर्म सेक्शन -->
+    <div id="sign-in-form2">
+        <h2>साइन इन करें</h2>
+        <form action="login-handler.php" method="POST">
+            <div class="form-group2">
+                <label for="username2">यूज़रनेम:</label>
+                <input type="text" id="username2" name="username2" required>
+            </div>
+            <div class="form-group2">
+                <label for="password2">पासवर्ड:</label>
+                <input type="password" id="password2" name="password2" required>
+            </div>
+            <button type="submit">साइन इन करें</button>
+        </form>
+    </div>
+
+      <!-- तिथि और समय दिखाने वाला बटन -->
+<button id="showDateTimeButton" class="show-date-time-button">तिथि और समय दिखाएं</button>
+
+<!-- Container for displaying date and time -->
+<div id="date-time-container" class="date-time-container" style="display:none;">
+    <p id="current-date-time"></p>
+    <button id="hideDateTimeButton" class="hide-date-time-button">छिपाएं</button>
+</div>
+
+    <div class="social-block">
+        <h2>कृष्णा चैरिटेबल सोसाइटी को फॉलो करें</h2>
+        <p>हमारे सोशल मीडिया चैनलों पर जुड़ें और हमारी गतिविधियों, इवेंट्स और समाचारों के बारे में अपडेट रहें। आपका समर्थन फर्क डालता है!</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/krishna_charitable_society" target="_blank">
+                <img src="images/insta.jpeg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/shourya-garg-aba547328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="images/link.jpeg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/krishna_charitable_society" target="_blank">
+                <img src="images/face.jpeg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/krishna_society" target="_blank">
+                <img src="images/twitt.png" alt="Twitter">
+            </a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 कृष्णा चैरिटेबल सोसाइटी। सर्वाधिकार सुरक्षित।</p>
+        </div>
+    </div>
+
+     <!-- Link to your JavaScript file -->
+     <script src="script.js"></script>
+    
+
+</body>
+</html>
+

@@ -1,0 +1,1893 @@
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top header with organization name (black background) */
+#top-header1 {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 40px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+    align-items: baseline;
+}
+
+#logo1 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons1 {
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons1 a {
+    background-color: #e91e63; /* Lighter pink for buttons */
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: slideIn 1s ease-out 0.5s forwards;
+}
+
+#auth-buttons1 a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    transform: scale(1.1); 
+}
+
+/* Navigation Bar (pink background) */
+#nav1 {
+    background-color: #ff4081; /* Vibrant pink background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav1 ul {
+    list-style-type: none;
+}
+
+#nav1 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav1 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav1 ul li a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Header section with image and content */
+#header1 {
+    background: url('home-header.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#header1 h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+#header1 p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#header1 button {
+    background-color: #ff4081; /* Pink button */
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+#header1 button:hover {
+    background-color: #c2185b; /* Darker pink */
+    transform: scale(1.05); 
+}
+
+
+   /* Centering the whole shloka section */
+   #shloka-section1 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 900px; /* Set a max-width to avoid stretching too much on large screens */
+}
+
+/* Styling for Sanskrit text */
+#sanskrit1 p {
+    font-family: 'Devanagari', serif; /* You can specify a font that supports Devanagari script */
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Styling for translation text */
+#translation1 p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+
+/* Image placeholders */
+#about-image-placeholder1,
+#projects-image-placeholder1,
+#testimonials-image-placeholder1 {
+    width: 100%;
+    height: 400px; /* Keep the height fixed */
+    margin: 0 auto;
+    background-color: #e0e0e0; /* Placeholder background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ff4081; /* Dotted border for placeholder */
+    margin-bottom: 20px;
+    position: relative; /* Ensure child elements (images) can fill the container */
+}
+
+/* Image placeholders */
+#about-image-placeholder1,
+#projects-image-placeholder1,
+#testimonials-image-placeholder1 {
+    width: 100%;
+    height: 400px; /* Keep the height fixed */
+    margin: 0 auto;
+    background-color: #e0e0e0; /* Placeholder background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px dashed #ff4081; /* Dotted border for placeholder */
+    margin-bottom: 20px;
+    position: relative; /* Ensure child elements (images) can fill the container */
+    overflow: hidden; /* Hide overflow, ensuring image fills the container */
+}
+
+/* Ensure image fully fills the container */
+#about-image-placeholder1 img,
+#projects-image-placeholder1 img,
+#testimonials-image-placeholder1 img {
+    width: 100%; /* Image will take up the full width of the container */
+    height: 100%; /* Image will take up the full height of the container */
+    object-fit: cover; /* Make sure the image covers the container area */
+    object-position: center; /* Center the image if it needs to be cropped */
+    display: block; /* Remove any unwanted space under the image */
+}
+
+/* Section and Button Styles */
+#section-content1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+button#cta-button1,
+button#cta-button2 {
+    background-color: #ff4081; /* Pink button */
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button#cta-button1:hover,
+button#cta-button2:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    transform: scale(1.05);
+}
+
+/* Footer section */
+#footer1 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+#footer1 p {
+    font-size: 14px;
+}
+
+/* General Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* General Bounce-in animation for header text */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Animation for Slide-in */
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top Header with black background */
+#top-header2 {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo2 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons2 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons2 a {
+    background-color: #e91e63; /* Lighter pink for buttons */
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#auth-buttons2 a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    transform: scale(1.1); 
+}
+
+/* Navigation Bar (Pink background) */
+#nav2 {
+    background-color: #ff4081; /* Vibrant pink background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav2 ul {
+    list-style-type: none;
+}
+
+#nav2 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav2 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav2 ul li a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Sign-In Form Section */
+#sign-in-form2 {
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#sign-in-form2 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff4081; /* Pink color for heading */
+}
+
+.form-group2 {
+    margin-bottom: 20px;
+}
+
+.form-group2 label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group2 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff4081; /* Pink button */
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink */
+    transform: scale(1.05); 
+}
+
+/* Footer Section */
+#footer2 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer2 p {
+    font-size: 14px;
+}
+
+/* General Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top Header with black background */
+#top-header3 {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo3 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons3 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons3 a {
+    background-color: #e91e63; /* Lighter pink for buttons */
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#auth-buttons3 a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    transform: scale(1.1); 
+}
+
+/* Navigation Bar (Pink background) */
+#nav3 {
+    background-color: #ff4081; /* Vibrant pink background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav3 ul {
+    list-style-type: none;
+}
+
+#nav3 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav3 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav3 ul li a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Sign Up Form Section */
+#sign-up-form3 {
+    background-color: #ffffff;
+    margin: 50px auto;
+    padding: 30px;
+    width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#sign-up-form3 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #ff4081; /* Pink color for heading */
+}
+
+.form-group3 {
+    margin-bottom: 20px;
+}
+
+.form-group3 label {
+    font-size: 18px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.form-group3 input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #ff4081; /* Pink button */
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #c2185b; /* Darker pink */
+    transform: scale(1.05); 
+}
+
+/* Footer Section */
+#footer3 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+#footer3 p {
+    font-size: 14px;
+}
+
+/* General Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top Header with black background */
+#top-header4 {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo4 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons4 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons4 a {
+    background-color: #e91e63; /* Lighter pink for buttons */
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#auth-buttons4 a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    transform: scale(1.1);
+}
+
+/* Navigation Bar (Pink background) */
+#nav4 {
+    background-color: #ff4081; /* Vibrant pink background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav4 ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#nav4 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav4 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav4 ul li a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+
+/* Donation Form */
+#donation-form4 {
+    width: 60%;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#donation-form4 h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group4 {
+    margin-bottom: 20px;
+}
+
+.form-group4 label {
+    font-size: 16px;
+    color: #333;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group4 input,
+.form-group4 select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-group4 input:focus,
+.form-group4 select:focus {
+    outline: none;
+    border-color: #e91e63;  /* Pink Focus */
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #e91e63; /* Pink */
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #d81b60; /* Darker Pink */
+}
+
+/* Donation Category Images */
+#donation-images4 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.donation-option4 {
+    display: none;
+    text-align: center;
+    width: 18%;
+}
+
+.donation-option4 img {
+    width: 100%;
+    max-width: 150px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.donation-option4 p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+/* Footer */
+#footer4 {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top Header with black background */
+#top-header5 {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo5 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons5 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons5 a {
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#auth-buttons5 a:hover {
+    background-color: #333; /* Darker background on hover */
+    transform: scale(1.1); 
+}
+
+/* Navigation Bar (Pink background) */
+#nav5 {
+    background-color: #ff4081; /* Vibrant pink background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav5 ul {
+    list-style-type: none;
+}
+
+#nav5 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav5 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav5 ul li a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Contact Us Section */
+#contact-us5 {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background: linear-gradient(45deg, #f0f8ff, #e0f7fa); /* Soft gradient background */
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+#contact-us5 h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 36px;
+    font-weight: bold;
+    color: #000; /* Black text for the header */
+}
+
+#contact-us5 p {
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #000; /* Black text for the paragraph */
+}
+
+/* Contact Form with White Background */
+#contact-us5 .form-container {
+    background-color: white; /* White background for the form */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Dark text for readability */
+    margin-top: 20px;
+}
+
+.form-group5 {
+    margin-bottom: 15px;
+}
+
+.form-group5 label {
+    display: block;
+    font-weight: bold;
+    color: #000; /* Black text for labels */
+    margin-bottom: 5px;
+}
+
+.form-group5 input, .form-group5 textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f9f9f9; /* Light grey background */
+    color: #333;
+}
+
+.form-group5 textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+button {
+    background-color: #333; /* Button color */
+    color: white;
+    font-size: 16px;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #666; /* Darker color on hover */
+}
+
+/* Fake Details Section Styling */
+#contact-us5 .fake-details {
+    color: black;  /* Fake details text color now black */
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+    background-color: black;  /* Black background for fake details */
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Footer Section */
+#footer5 {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+/* Social Media Links Styling */
+#contact-us5 a.social-link {
+    font-size: 18px;
+    margin: 0 15px;
+    display: inline-block;
+    text-align: center;
+    background-color: #333;
+    padding: 12px;
+    border-radius: 50%;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#contact-us5 a.social-link:hover {
+    background-color: #666;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top header with organization name (black background) */
+#top-header6 {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo6 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons6 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons6 a {
+    background-color: #e91e63; /* Lighter pink for buttons */
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: slideIn 1s ease-out 0.5s forwards;
+}
+
+#auth-buttons6 a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    transform: scale(1.1); 
+}
+
+/* Navigation Bar (pink background) */
+#nav6 {
+    background-color: #ff4081; /* Vibrant pink background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav6 ul {
+    list-style-type: none;
+}
+
+#nav6 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav6 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav6 ul li a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Header section with image and content */
+#header6 {
+    background: url('header-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#header6 h1 {
+    font-size: 80px;
+    margin-bottom: 20px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+#header6 p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#header6 button {
+    background-color: #ff4081; /* Pink button */
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+#header6 button:hover {
+    background-color: #c2185b; /* Darker pink */
+    transform: scale(1.05); 
+}
+ 
+
+/* Styling for the Shloka Image 6 */
+#shloka-image6 {
+    width: 100%;
+    max-width: 600px; /* Maximum width for the image */
+    height: 400px; /* Set height as per the requirement */
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for image scaling */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    object-fit: cover; /* Ensures the image fully fills the frame */
+}
+
+/* Hover effect to enlarge the image */
+#shloka-image6:hover {
+    transform: scale(1.1); /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Enhanced shadow effect when hovered */
+}
+
+
+
+
+/* Centering the whole shloka section */
+#shloka-section6 {
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    width: 80%; /* Adjust width as needed */
+    max-width: 900px; /* Set a max-width to avoid stretching too much on large screens */
+}
+
+/* Styling for Sanskrit text */
+#sanskrit-text6 p {
+    font-family: 'Devanagari', serif; /* You can specify a font that supports Devanagari script */
+    font-size: 24px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Styling for translation text */
+#translation6 p {
+    font-size: 18px;
+    line-height: 1.6;
+    font-style: italic;
+    margin-top: 20px;
+}
+
+/* Styling for Krishna's Lines */
+#krishna-lines6 {
+    margin-top: 40px;
+    background-color: #f8f9fa; /* Light background to make the text stand out */
+    padding: 20px;
+    border-radius: 8px;
+}
+
+#krishna-lines6 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+#krishna-lines6 strong {
+    font-size: 20px;
+    color: #ff4081; /* Pink color to highlight the header */
+}
+
+/* About section */
+#about-section6 {
+    padding: 40px 0;
+    text-align: center;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px 0;
+}
+
+#about-section6 h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about-image-placeholder6 {
+    max-width: 100%;
+    margin-bottom: 20px;
+}
+
+#about-section6 p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+#about-section6 button {
+    background-color: #ff4081;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#about-section6 button:hover {
+    background-color: #c2185b;
+}
+
+/* Footer Section */
+#footer6 {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+    padding: 0 20px; /* Add padding to prevent text from touching the sides */
+}
+
+/* Top header with organization name (black background) */
+#top-header1 {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo1 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons1 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons1 a {
+    background-color: #e91e63;
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: slideIn 1s ease-out 0.5s forwards;
+}
+
+#auth-buttons1 a:hover {
+    background-color: #c2185b;
+    transform: scale(1.1);
+}
+
+/* Navigation Bar (pink background) */
+#nav1 {
+    background-color: #ff4081;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 30px; /* Add spacing below the navbar */
+}
+
+#nav1 ul {
+    list-style-type: none;
+}
+
+#nav1 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav1 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav1 ul li a:hover {
+    background-color: #c2185b;
+}
+
+/* Header section for Projects Page */
+#header7 {
+    background: url('projects-header.jpg') no-repeat center center/cover;
+    height: 80vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#header7 h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    animation: bounceIn 1.5s ease-in-out;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#header7 p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+#header7 button {
+    background-color: #ff4081;
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+#header7 button:hover {
+    background-color: #c2185b;
+    transform: scale(1.05);
+}
+
+/* Section and Button Styles */
+#section-content1 {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Styling for Projects Section */
+.projects-section7 {
+    margin: 40px auto; /* Add space around the section */
+    padding: 20px;
+    background-color: #f9f9f9; /* Light background color for the entire section */
+    max-width: 1200px;
+    border-radius: 10px;
+}
+
+/* Individual project section */
+.project7 {
+    margin-bottom: 40px; /* Space between each project */
+    padding: 20px;
+    background-color: #fff; /* White background for each project */
+    border-radius: 10px; /* Rounded corners for each project block */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Title for each project */
+.project-title7 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333; /* Dark color for the title */
+    margin-bottom: 15px; /* Space below the title */
+    border-bottom: 3px solid #ff4081; /* Underline the title with pink */
+    padding-bottom: 10px;
+}
+
+/* Description text for each project */
+.project-description7 {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 20px; /* Space below the description */
+}
+
+/* Styling for images within each project */
+.project-images7 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; /* Space between images */
+    justify-content: space-between;
+}
+
+/* Image styling to fit in the container */
+.project-img7 {
+    width: 32%; /* Each image takes up 1/3 of the container */
+    height: auto;
+    border-radius: 8px; /* Rounded corners for the images */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Light shadow around each image */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effect */
+}
+
+/* Hover effect for images */
+.project-img7:hover {
+    transform: scale(1.05); /* Slightly enlarge the image */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Enhance shadow when hovered */
+}
+
+/* Media Query to make images responsive on smaller screens */
+@media (max-width: 768px) {
+    .project-img7 {
+        width: 48%; /* Two images per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .project-img7 {
+        width: 100%; /* Full width for images on very small screens */
+    }
+}
+
+
+/* Footer section */
+#footer7 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+#footer7 p {
+    font-size: 14px;
+}
+
+/* General Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* General Bounce-in animation for header text */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Reset default browser margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Top header with organization name (black background) */
+#top-header8 {
+    background-color: #000000; /* Black background */
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 36px;
+    position: relative;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#logo8 {
+    position: absolute;
+    left: 20px;
+    top: 10px;
+    width: 80px;
+    height: auto;
+}
+
+#auth-buttons8 {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+
+#auth-buttons8 a {
+    background-color: #e91e63; /* Lighter pink for buttons */
+    color: white;
+    font-size: 14px;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#auth-buttons8 a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+    transform: scale(1.1); 
+}
+
+/* Navigation Bar (pink background) */
+#nav8 {
+    background-color: #ff4081; /* Vibrant pink background */
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+#nav8 ul {
+    list-style-type: none;
+}
+
+#nav8 ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+#nav8 ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#nav8 ul li a:hover {
+    background-color: #c2185b; /* Darker pink on hover */
+}
+
+/* Header section with image and content */
+#header8 {
+    background: url('donate.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#header8 h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+    animation: bounceIn 1.5s ease-in-out;
+}
+
+#header8 p {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+#header8 button {
+    background-color: #ff4081; /* Pink button */
+    color: white;
+    font-size: 18px;
+    padding: 12px 25px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in-out 1s forwards;
+}
+
+#header8 button:hover {
+    background-color: #c2185b; /* Darker pink */
+    transform: scale(1.05); 
+}
+
+/* Styling the How to Involve Block */
+#how-to-involve8 {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+}
+
+#how-to-involve8 .heading8 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #ff4081;
+    margin-bottom: 40px;
+}
+
+/* Steps styling */
+#steps-to-involve8 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.step8 {
+    background-color: #fff;
+    border: 2px solid #ff4081;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.step8 h3 {
+    color: #ff4081;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.step8 p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Footer section */
+#footer8 {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    animation: fadeIn 2s ease-in-out 2s forwards;
+}
+
+#footer8 p {
+    font-size: 14px;
+}
+
+/* General Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* General Bounce-in animation for header text */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0);
+    }
+    60% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
+
+
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff;  /* Light background for the website */
+    color: #333333;  /* Default text color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Social Block Styling */
+.social-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    padding: 40px;
+    background-color: #000000;  /* Black background for the block */
+    color: #ffffff;  /* White text for the block */
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);  /* Slight shadow for depth */
+    margin: 50px 0;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+.social-block:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);  /* Stronger shadow on hover */
+}
+
+/* Heading Style */
+.social-block h2 {
+    font-size: 24px;
+    color: #ffffff;  /* White text for the heading */
+    margin-bottom: 20px;
+}
+
+/* Paragraph Style */
+.social-block p {
+    font-size: 18px;
+    color: #ffffff;  /* White text for the paragraph */
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* Social Media Links */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /* Ensure they wrap when the screen size is smaller */
+}
+
+/* Individual Social Media Link Style */
+.social-links a {
+    display: inline-block;
+    width: 60px;  /* Adjusted width to make the circle a bit larger */
+    height: 60px;  /* Adjusted height to make the circle a bit larger */
+    border-radius: 50%;  /* Makes the border and icon circular */
+    background-color: transparent;  /* Transparent background for the icons */
+    border: 2px solid #ffffff;  /* White border around the icons */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover Effect on Social Links */
+.social-links a:hover {
+    background-color: #ffffff;  /* White background on hover */
+    transform: scale(1.1);
+}
+
+.social-links a:hover img {
+    filter: brightness(1.3);  /* Lighter icons on hover */
+}
+
+/* Image Style inside Social Links */
+.social-links img {
+    width: 30px;  /* Ensure the icons are centered inside the circular border */
+    height: 30px;  /* Ensures the icons are the correct size inside the circle */
+    border-radius: 50%;  /* Makes the image circular if it's square */
+    transition: filter 0.3s ease;
+}
+
+/* Footer Style */
+.footer {
+    width: 100%;
+    background-color: #000000;  /* Black background for footer */
+    color: #ffffff;  /* White text for footer */
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Style for the "Show Date and Time" button */
+.show-date-time-button {
+    background-color: #ff7f2a;  /* Green background */
+    color: white;               /* White text */
+    border: none;               /* No border */
+    padding: 10px 20px;         /* Padding around text */
+    text-align: center;         /* Center the text */
+    font-size: 16px;            /* Font size */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;         /* Rounded corners */
+    margin: 10px;               /* Margin around button */
+}
+
+.show-date-time-button:hover {
+    background-color: #ff0000c7;  /* Darker green on hover */
+}
+
+/* Style for the "Hide" button */
+.hide-date-time-button {
+    background-color: #00ff22ab;  /* Red background */
+    color: white;               /* White text */
+    border: none;               /* No border */
+    padding: 10px 20px;         /* Padding around text */
+    text-align: center;         /* Center the text */
+    font-size: 16px;            /* Font size */
+    cursor: pointer;           /* Pointer cursor on hover */
+    border-radius: 5px;         /* Rounded corners */
+    margin: 10px;               /* Margin around button */
+}
+
+.hide-date-time-button:hover {
+    background-color: #2bff00cc;  /* Darker red on hover */
+}
+
+/* Style for the date-time container */
+.date-time-container {
+    margin-top: 20px;           /* Margin from top */
+    padding: 20px;              /* Padding inside container */
+    border: 1px solid #ddd;     /* Light border */
+    border-radius: 8px;         /* Rounded corners */
+    background-color: #f9f9f9;  /* Light background */
+}
+
+/* Style for the paragraph displaying date and time */
+#current-date-time {
+    font-size: 18px;            /* Font size */
+    font-weight: bold;          /* Bold text */
+    margin-bottom: 20px;        /* Margin below the paragraph */
+}

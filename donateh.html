@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>दान करें - कृष्णा चैरिटेबल सोसाइटी</title>
+    <link rel="stylesheet" href="styles.css">  <!-- मान लें कि आपकी styles.css पहले से मौजूद है -->
+</head>
+<body>
+
+    <!-- शीर्ष हेडर (काले बैकग्राउंड के साथ) -->
+    <div id="top-header6">
+        <!-- Placeholder for Logo -->
+        <div id="logo6">
+            <img src="logo.jpg" alt="Krishna Charitable Society Logo" height="170" width="170">
+        </div>
+        कृष्णा चैरिटेबल सोसाइटी
+        <p style="color: black;">. <br> .</p>
+        <div id="auth-buttons4">
+            <a href="signinh.html">साइन इन</a>
+        <a href="signuph.html">साइन अप</a>
+        <a href="donate.html">English</a>
+        </div>
+    </div>
+
+    <!-- नेविगेशन बार (पिंक बैकग्राउंड के साथ) -->
+    <div id="nav4">
+        <ul>
+            <li><a href="indexh.html">मुख्य पृष्ठ</a></li>
+            <li><a href="abouth.html">हमारे बारे में</a></li>
+            <li><a href="donateh.html">दान करें</a></li>
+            <li><a href="projectsh.html">परियोजनाएँ</a></li>
+            <li><a href="get-involvedh.html">जोड़ें</a></li>
+            <li><a href="contacth.html">संपर्क करें</a></li>
+        </ul>
+    </div>
+
+    <!-- दान फॉर्म अनुभाग -->
+    <div id="donation-form4">
+        <h2>कृष्णा चैरिटेबल सोसाइटी को दान करें</h2>
+        <p>आपका समर्थन एक नई दुनिया बना सकता है। हमारे उद्देश्य में योगदान देने के लिए धन्यवाद!</p>
+        
+        <form action="index.html" method="POST">
+            
+            <!-- दान श्रेणी का चयन करें -->
+            <div class="form-group4">
+                <label for="donation-category4">दान श्रेणी चुनें:</label>
+                <select id="donation-category4" name="donation-category4" required>
+                    <option value="food">खाद्य</option>
+                    <option value="clothing">वस्त्र</option>
+                    <option value="education">शिक्षा</option>
+                    <option value="healthcare">स्वास्थ्य</option>
+                    <option value="others">अन्य</option>
+                </select>
+            </div>
+
+            <!-- दान श्रेणी के लिए चित्र (डायनेमिक चित्र स्थानधारी) -->
+            <div id="donation-images4">
+                <div class="donation-option4" id="food-option4">
+                    <img src="images/food.jpeg" alt="खाद्य दान" class="donation-image4">
+                    <p>खाद्य के लिए दान करें</p>
+                </div>
+                <div class="donation-option4" id="clothing-option4">
+                    <img src="images/cloth.jpeg" alt="वस्त्र दान" class="donation-image4">
+                    <p>वस्त्र के लिए दान करें</p>
+                </div>
+                <div class="donation-option4" id="education-option4">
+                    <img src="images/education.jpeg" alt="शिक्षा दान" class="donation-image4">
+                    <p>शिक्षा के लिए दान करें</p>
+                </div>
+                <div class="donation-option4" id="healthcare-option4">
+                    <img src="images/health.jpeg" alt="स्वास्थ्य दान" class="donation-image4">
+                    <p>स्वास्थ्य के लिए दान करें</p>
+                </div>
+                <div class="donation-option4" id="others-option4">
+                    <img src="images/others.jpeg" alt="अन्य दान" class="donation-image4">
+                    <p>अन्य के लिए दान करें</p>
+                </div>
+            </div>
+
+            <!-- दान राशि -->
+            <div class="form-group4">
+                <label for="donation-amount4">दान राशि (₹ में):</label>
+                <input type="number" id="donation-amount4" name="donation-amount4" required min="1" placeholder="राशि दर्ज करें">
+            </div>
+
+            <!-- दाता का नाम -->
+            <div class="form-group4">
+                <label for="donor-name4">आपका नाम:</label>
+                <input type="text" id="donor-name4" name="donor-name4" required placeholder="अपना नाम दर्ज करें">
+            </div>
+
+            <!-- दाता का ईमेल -->
+            <div class="form-group4">
+                <label for="donor-email4">आपका ईमेल:</label>
+                <input type="email" id="donor-email4" name="donor-email4" required placeholder="अपना ईमेल दर्ज करें">
+            </div>
+
+            <!-- दान के लिए बैंक विवरण -->
+            <h3>दान के लिए बैंक विवरण</h3>
+
+            <!-- बैंक का नाम -->
+            <div class="form-group4">
+                <label for="bank-name4">बैंक का नाम:</label>
+                <input type="text" id="bank-name4" name="bank-name4" required placeholder="बैंक का नाम दर्ज करें">
+            </div>
+
+            <!-- खाता संख्या -->
+            <div class="form-group4">
+                <label for="account-number4">खाता संख्या:</label>
+                <input type="text" id="account-number4" name="account-number4" required placeholder="खाता संख्या दर्ज करें">
+            </div>
+
+            <!-- IFSC कोड -->
+            <div class="form-group4">
+                <label for="ifsc-code4">IFSC कोड:</label>
+                <input type="text" id="ifsc-code4" name="ifsc-code4" required placeholder="IFSC कोड दर्ज करें">
+            </div>
+
+            <!-- खाता प्रकार -->
+            <div class="form-group4">
+                <label for="account-type4">खाता प्रकार:</label>
+                <select id="account-type4" name="account-type4" required>
+                    <option value="savings">साविंग्स</option>
+                    <option value="current">करेंट</option>
+                </select>
+            </div>
+
+            <button type="submit">दान करें</button>
+        </form>
+    </div>
+
+      <!-- तिथि और समय दिखाने वाला बटन -->
+<button id="showDateTimeButton" class="show-date-time-button">तिथि और समय दिखाएं</button>
+
+<!-- Container for displaying date and time -->
+<div id="date-time-container" class="date-time-container" style="display:none;">
+    <p id="current-date-time"></p>
+    <button id="hideDateTimeButton" class="hide-date-time-button">छिपाएं</button>
+</div>
+
+    <div class="social-block">
+        <h2>कृष्णा चैरिटेबल सोसाइटी को फॉलो करें</h2>
+        <p>हमारे सोशल मीडिया चैनलों पर जुड़ें और हमारी गतिविधियों, इवेंट्स और समाचारों के बारे में अपडेट रहें। आपका समर्थन फर्क डालता है!</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/krishna_charitable_society" target="_blank">
+                <img src="images/insta.jpeg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/shourya-garg-aba547328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="images/link.jpeg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/krishna_charitable_society" target="_blank">
+                <img src="images/face.jpeg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/krishna_society" target="_blank">
+                <img src="images/twitt.png" alt="Twitter">
+            </a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 कृष्णा चैरिटेबल सोसाइटी। सर्वाधिकार सुरक्षित।</p>
+        </div>
+    </div>
+    
+
+    <!-- वैकल्पिक JavaScript जो संबंधित चित्र दिखाने के लिए -->
+    <script>
+        const donationCategorySelect4 = document.getElementById('donation-category4');
+        const donationImages4 = document.getElementById('donation-images4');
+        
+        donationCategorySelect4.addEventListener('change', function() {
+            const selectedCategory = donationCategorySelect4.value;
+
+            // सभी दान विकल्पों को छिपाएं
+            document.querySelectorAll('.donation-option4').forEach(option => {
+                option.style.display = 'none';
+            });
+
+            // चयनित श्रेणी को दिखाएं
+            const selectedOption = document.getElementById(selectedCategory + '-option4');
+            if (selectedOption) {
+                selectedOption.style.display = 'block';
+            }
+        });
+
+        // पृष्ठ लोड होते समय डिफ़ॉल्ट श्रेणी चित्र दिखाने के लिए परिवर्तन घटना को ट्रिगर करें
+        donationCategorySelect4.dispatchEvent(new Event('change'));
+    </script>
+
+     <!-- Link to your JavaScript file -->
+     <script src="script.js"></script>
+
+
+</body>
+</html>

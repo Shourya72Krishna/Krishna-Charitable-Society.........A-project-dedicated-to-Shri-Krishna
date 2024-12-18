@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate - Krishna Charitable Society</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Assume your styles.css is already available -->
+</head>
+<body>
+
+    <!-- Top Header (with black background) -->
+    <div id="top-header6">
+        <!-- Placeholder for Logo -->
+        <div id="logo6">
+            <img src="logo.jpg" alt="Krishna Charitable Society Logo" height="170" width="170">
+        </div>
+        Krishna Charitable Society 
+        <p style="color: black;">. <br> .</p>
+        <div id="auth-buttons4">
+            <a href="signin.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="donateh.html">हिंदी</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar (with pink background) -->
+    <div id="nav4">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Donation Form Section -->
+    <div id="donation-form4">
+        <h2>Donate to Krishna Charitable Society</h2>
+        <p>Your support can create a new world. Thank you for contributing to our cause!</p>
+        
+        <form action="index.html" method="POST">
+            
+            <!-- Select Donation Category -->
+            <div class="form-group4">
+                <label for="donation-category4">Select Donation Category:</label>
+                <select id="donation-category4" name="donation-category4" required>
+                    <option value="food">Food</option>
+                    <option value="clothing">Clothing</option>
+                    <option value="education">Education</option>
+                    <option value="healthcare">Healthcare</option>
+                    <option value="others">Others</option>
+                </select>
+            </div>
+
+            <!-- Images for Donation Categories (Dynamic Image Placeholders) -->
+            <div id="donation-images4">
+                <div class="donation-option4" id="food-option4">
+                    <img src="images/food.jpeg" alt="Food Donation" class="donation-image4">
+                    <p>Donate for Food</p>
+                </div>
+                <div class="donation-option4" id="clothing-option4">
+                    <img src="images/cloth.jpeg" alt="Clothing Donation" class="donation-image4">
+                    <p>Donate for Clothing</p>
+                </div>
+                <div class="donation-option4" id="education-option4">
+                    <img src="images/education.jpeg" alt="Education Donation" class="donation-image4">
+                    <p>Donate for Education</p>
+                </div>
+                <div class="donation-option4" id="healthcare-option4">
+                    <img src="images/health.jpeg" alt="Healthcare Donation" class="donation-image4">
+                    <p>Donate for Healthcare</p>
+                </div>
+                <div class="donation-option4" id="others-option4">
+                    <img src="images/others.jpeg" alt="Other Donations" class="donation-image4">
+                    <p>Donate for Others</p>
+                </div>
+            </div>
+
+            <!-- Donation Amount -->
+            <div class="form-group4">
+                <label for="donation-amount4">Donation Amount (in ₹):</label>
+                <input type="number" id="donation-amount4" name="donation-amount4" required min="1" placeholder="Enter amount">
+            </div>
+
+            <!-- Donor's Name -->
+            <div class="form-group4">
+                <label for="donor-name4">Your Name:</label>
+                <input type="text" id="donor-name4" name="donor-name4" required placeholder="Enter your name">
+            </div>
+
+            <!-- Donor's Email -->
+            <div class="form-group4">
+                <label for="donor-email4">Your Email:</label>
+                <input type="email" id="donor-email4" name="donor-email4" required placeholder="Enter your email">
+            </div>
+
+            <!-- Bank Details for Donation -->
+            <h3>Bank Details for Donation</h3>
+
+            <!-- Bank Name -->
+            <div class="form-group4">
+                <label for="bank-name4">Bank Name:</label>
+                <input type="text" id="bank-name4" name="bank-name4" required placeholder="Enter bank name">
+            </div>
+
+            <!-- Account Number -->
+            <div class="form-group4">
+                <label for="account-number4">Account Number:</label>
+                <input type="text" id="account-number4" name="account-number4" required placeholder="Enter account number">
+            </div>
+
+            <!-- IFSC Code -->
+            <div class="form-group4">
+                <label for="ifsc-code4">IFSC Code:</label>
+                <input type="text" id="ifsc-code4" name="ifsc-code4" required placeholder="Enter IFSC code">
+            </div>
+
+            <!-- Account Type -->
+            <div class="form-group4">
+                <label for="account-type4">Account Type:</label>
+                <select id="account-type4" name="account-type4" required>
+                    <option value="savings">Savings</option>
+                    <option value="current">Current</option>
+                </select>
+            </div>
+
+            <button type="submit">Donate</button>
+        </form>
+    </div>
+
+     <!-- Button to display date and time -->
+<button id="showDateTimeButton" class="show-date-time-button">Show Date and Time</button>
+
+<!-- Container for displaying date and time -->
+<div id="date-time-container" class="date-time-container" style="display:none;">
+    <p id="current-date-time"></p>
+    <button id="hideDateTimeButton" class="hide-date-time-button">Hide</button>
+</div>
+
+    <div class="social-block">
+        <h2>Follow Krishna Charitable Society</h2>
+        <p>Join us on our social media channels to stay updated on our activities, events, and news. Your support makes a difference!</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/krishna_charitable_society" target="_blank">
+                <img src="images/insta.jpeg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/shourya-garg-aba547328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="images/link.jpeg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/krishna_charitable_society" target="_blank">
+                <img src="images/face.jpeg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/krishna_society" target="_blank">
+                <img src="images/twitt.png" alt="Twitter">
+            </a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Krishna Charitable Society. All rights reserved.</p>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript to Show Relevant Images Based on Category -->
+    <script>
+        const donationCategorySelect4 = document.getElementById('donation-category4');
+        const donationImages4 = document.getElementById('donation-images4');
+        
+        donationCategorySelect4.addEventListener('change', function() {
+            const selectedCategory = donationCategorySelect4.value;
+
+            // Hide all donation options
+            document.querySelectorAll('.donation-option4').forEach(option => {
+                option.style.display = 'none';
+            });
+
+            // Show the selected category option
+            const selectedOption = document.getElementById(selectedCategory + '-option4');
+            if (selectedOption) {
+                selectedOption.style.display = 'block';
+            }
+        });
+
+        // Trigger change event on page load to show default category image
+        donationCategorySelect4.dispatchEvent(new Event('change'));
+    </script>
+
+     <!-- Link to your JavaScript file -->
+     <script src="script.js"></script>
+
+</body>
+</html>

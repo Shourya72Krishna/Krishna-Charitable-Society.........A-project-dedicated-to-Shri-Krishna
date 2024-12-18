@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In - Krishna Charitable Society</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Top Header (Black Background) -->
+    <div id="top-header6">
+        <!-- Placeholder for Logo -->
+        <div id="logo6">
+            <img src="logo.jpg" alt="Krishna Charitable Society Logo" height="170" width="170">
+        </div>
+        Krishna Charitable Society 
+        <p style="color: black;">. <br> .</p>
+        <div id="auth-buttons2">
+            <a href="signin.html">Sign In</a>
+            <a href="signup.html">Sign Up</a>
+            <a href="signinh.html">हिंदी</a>
+        </div>
+    </div>
+
+    <!-- Navigation Bar (Pink Background) -->
+    <div id="nav2">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="donate.html">Donate</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="get-involved.html">Get Involved</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+
+    <!-- Sign In Form Section -->
+    <div id="sign-in-form2">
+        <h2>Sign In</h2>
+        <form action="home.html" method="POST">
+            <div class="form-group2">
+                <label for="username2">Username:</label>
+                <input type="text" id="username2" name="username2" required>
+            </div>
+            <div class="form-group2">
+                <label for="password2">Password:</label>
+                <input type="password" id="password2" name="password2" required>
+            </div>
+            <button type="submit">Sign In</button>
+        </form>
+    </div>
+
+     <!-- Button to display date and time -->
+<button id="showDateTimeButton" class="show-date-time-button">Show Date and Time</button>
+
+<!-- Container for displaying date and time -->
+<div id="date-time-container" class="date-time-container" style="display:none;">
+    <p id="current-date-time"></p>
+    <button id="hideDateTimeButton" class="hide-date-time-button">Hide</button>
+</div>
+
+    <div class="social-block">
+        <h2>Follow Krishna Charitable Society</h2>
+        <p>Join us on our social media channels to stay updated on our activities, events, and news. Your support makes a difference!</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/krishna_charitable_society" target="_blank">
+                <img src="images/insta.jpeg" alt="Instagram">
+            </a>
+            <a href="https://www.linkedin.com/in/shourya-garg-aba547328?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+                <img src="images/link.jpeg" alt="LinkedIn">
+            </a>
+            <a href="https://www.facebook.com/krishna_charitable_society" target="_blank">
+                <img src="images/face.jpeg" alt="Facebook">
+            </a>
+            <a href="https://twitter.com/krishna_society" target="_blank">
+                <img src="images/twitt.png" alt="Twitter">
+            </a>
+        </div>
+        <div class="footer">
+            <p>&copy; 2024 Krishna Charitable Society. All rights reserved.</p>
+        </div>
+    </div>
+
+     <!-- Link to your JavaScript file -->
+     <script src="script.js"></script>
+
+</body>
+</html>

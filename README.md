@@ -9,4 +9,6 @@
         Projects
         Sign In
         Sign Up
+        Get Involved
+        Donate
         
